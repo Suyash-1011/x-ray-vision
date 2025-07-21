@@ -64,7 +64,11 @@ def load_test_cases():
 trace_data = load_test_cases()
 df = pd.DataFrame(trace_data)
 st.subheader("Trace Summary Table")
-def highlight_null(val): return "background-color: red" if val=="NULL" else ""
+def highlight_null(val):
+    if val == "NULL":
+        return "color: red; background-color: white"
+    return ""
+
 st.dataframe(df.style.applymap(highlight_null))
 
 
@@ -224,7 +228,7 @@ for key, value in trace_row.items():
         else:
             temp["color"]="red"
             temp["title"]=temp["title"]+"\nresponse could not be sent by dialin worker to front worker"
-            info ="The request phase gone perfect but in the response phase there is a problem in cloud proxy where the dialin worker could not send the response to the front worker internally"
+            info ="The request phase gone perfect, but in the response phase there is a problem in cloud proxy where the dialin worker could not send the response to the front worker internally"
             break
     if(key=="TRACE_RESP_CW_STREAM_DIALIN"):
         temp=net.get_node("Cloud-Proxy")
