@@ -1,0 +1,9 @@
+{
+  "xray_id": "744771114929890774",
+  "origin_ip": "10.0.0.15",
+  "CP - FW Trace": [
+    "2025/05/29 04:13:00.000 [error] 16013#0: Trace-xray: xrayid: 744771114929890774, Paths: TRACE_REQ_CW_HTTP(04:13:00.000) -> "
+  ],
+  "CP - DW Trace": [],
+  "Connector_trace": []
+}

@@ -1,0 +1,12 @@
+{
+  "xray_id": "539586079748012488",
+  "origin_ip": "10.0.0.13",
+  "CP - FW Trace": [
+    "2025/05/29 04:11:00.000 [error] 16011#0: Trace-xray: xrayid: 539586079748012488, Paths: TRACE_REQ_CW_HTTP(04:11:00.000) -> ",
+    "2025/05/29 04:11:00.370 [error] 16011#0: Trace-xray: xrayid: 539586079748012488, Paths: TRACE_REQ_CW_STREAM_DIALIN(04:11:00.370) -> "
+  ],
+  "CP - DW Trace": [
+    "2025/05/29 04:11:00.740 [error] 17011#0: Trace-xray: xrayid: 539586079748012488, Paths: TRACE_REQ_DW_STREAM_DIALIN(04:11:00.740) -> "
+  ],
+  "Connector_trace": []
+}
